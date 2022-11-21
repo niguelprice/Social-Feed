@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import DisplayEntries from './Components/DisplayEntries/DisplayEntries';
-
+import DisplayPost from './Components/DisplayPost/DisplayPost';
+import CreatePost from './Components/CreatePost/CreatePost';
 
 function App() {
 
@@ -8,7 +8,8 @@ const [entries, setEntries] = useState([{Name: 'Niguel Price', Post: 'Im a softw
 
   return (
     <div>
-      <DisplayEntries parentEntries={entries} />
+      <CreatePost />
+      <DisplayPost parentEntries={entries} />
     </div>
   );
 }
